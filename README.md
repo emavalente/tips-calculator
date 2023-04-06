@@ -1,5 +1,5 @@
 # tips-calculator
-This is a tips calculator's example for restaurants.
+This is an example of consumptions and tips calculator for restaurants.
 
 ## To start:
 You must to clone this repository and them you can execute the next code in console on you project folder.
