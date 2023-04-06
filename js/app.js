@@ -324,7 +324,7 @@ function printTips() {
     calculateTip(radio10.value);
   };
 
-  // Radio Button 10%
+  // Radio Button 25%
   const radio25 = document.createElement("INPUT");
   radio25.type = "radio";
   radio25.name = "tip";
@@ -342,7 +342,7 @@ function printTips() {
     calculateTip(radio25.value);
   };
 
-  // Radio Button 10%
+  // Radio Button 50%
   const radio50 = document.createElement("INPUT");
   radio50.type = "radio";
   radio50.name = "tip";
