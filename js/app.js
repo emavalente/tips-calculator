@@ -61,13 +61,15 @@ function avaliableHTML() {
   hideSections.forEach((section) => section.classList.remove("d-none"));
 }
 
-function getMenu() {
+async function getMenu() {
   const url = "http://localhost:4000/platillos";
-
-  fetch(url)
-    .then((response) => response.json())
-    .then((result) => printMenu(result))
-    .catch((error) => console.log(error));
+  try {
+    const response = await fetch(url);
+    const result = await response.json();
+    printMenu(result);
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 function printMenu(menu) {
